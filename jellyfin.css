@@ -1,0 +1,255 @@
+/*-------------------------BG Blur------------------------------------------*/
+.backgroundContainer.withBackdrop {
+  background: url(https://i.imgur.com/o144ltn.png) !important;
+}
+
+.backdropContainer {
+  -webkit-backface-visibility: visible;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: visible;
+  perspective: 1000;
+  transform: translate3d(0, 0, 0);
+  transform: translateZ(0);
+  -webkit-filter: blur(15px) !important;
+  -moz-filter: blur(15px) !important;
+  -o-filter: blur(15px) !important;
+  -ms-filter: blur(15px) !important;
+  filter: blur(15px) !important;
+}
+
+/*--------------------Translucent Header------------------------------------------*/
+.skinHeader.skinHeader-withBackground.headroom.noHomeButtonHeader {
+  background: none;
+  background-color: rgba(40, 40, 40, .75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.skinHeader.skinHeader-withBackground.headroom {
+  background: none;
+  background-color: rgba(40, 40, 40, .75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/*Make watched icon dark and transparent*/
+.playedIndicator {
+  background: #00000058;
+}
+
+/*Watched count colors*/
+.countIndicator, .fullSyncIndicator {
+  background: #00a4dcdd;
+  border: 1px solid white;
+}
+
+.playedIndicator {
+  background: #00dca6dd;
+  border: 1px solid white;
+}
+
+/*Top menu transparency*/
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+  /*
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+  */
+  background: rgba(0, 0, 0, 0.75);
+  0, 0, 0, 1
+}
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+  /*
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+  */
+  background: rgba(0, 0, 0, 0.25);
+
+}
+
+.headerTabs {
+    display: none;
+}
+
+/*
+sectionTabs
+*/
+
+/*Adjust both "size-adjust" and "size" to modify size*/
+.headerTabs.sectionTabs {
+  text-size-adjust: 110%;
+  font-size: 110%;
+}
+
+.pageTitle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.emby-tab-button {
+  padding: 1.75em 1.7em;
+}
+
+/*Narrow the login form*/
+#loginPage .readOnlyContent, #loginPage form {
+  max-width: 22em;
+}
+
+/*Hide "please login" text, margin is to prevent login form moving too far up*/
+#loginPage h1 {
+  display: none
+}
+
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  margin-top: 50px
+}
+
+/*Hide "manual" and "forgot" buttons*/
+#loginPage .raised.cancel.block.btnManual.emby-button {
+  display: none
+}
+
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+  display: none
+}
+
+/*Size episode preview images in a more compact way*/
+.listItemImage.listItemImage-large.itemAction.lazy {
+  height: 110px;
+}
+
+.listItem-content {
+  height: 115px;
+}
+
+.secondary.listItem-overview.listItemBodyText {
+  height: 61px;
+  margin: 0;
+}
+
+/*Shrink and square (or round) cast thumnails*/
+#castContent .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
+  width: 4.2cm !important;
+  font-size: 90% !important;
+}
+
+#castContent .card.overflowPortraitCard.personCard.card-withuserdata {
+  width: 4.2cm !important;
+  font-size: 90% !important;
+}
+
+#castContent .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
+  width: 12% !important;
+  font-size: 90% !important;
+}
+
+#castContent .card.overflowPortraitCard.personCard.card-withuserdata {
+  width: 12% !important;
+  font-size: 90% !important;
+}
+
+#castContect .cardTextCentered {
+  width: 11% !important;
+  font-size: 90% !important;
+}
+
+/*Correct image aspect ratio behaviour, set border-radius to zero for square tiles*/
+#castContent .cardContent-button.cardImageContainer.coveredImage.cardContent.cardContent-shadow.itemAction.lazy {
+  background-size: cover;
+   !important;
+  border-radius: 50%;
+}
+
+#castContent .cardImageContainer.coveredImage.cardContent.cardContent-shadow.lazy {
+  background-size: cover;
+   !important;
+  border-radius: 50%;
+}
+
+/* TV layout */
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground1.cardContent.cardContent-shadow.itemAction {
+  background-size: cover;
+   !important;
+  border-radius: 50%;
+}
+
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground2.cardContent.cardContent-shadow.itemAction {
+  background-size: cover;
+   !important;
+  border-radius: 50%;
+}
+
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground3.cardContent.cardContent-shadow.itemAction {
+  background-size: cover;
+   !important;
+  border-radius: 50%;
+}
+
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground4.cardContent.cardContent-shadow.itemAction {
+  background-size: cover;
+   !important;
+  border-radius: 50%;
+}
+
+#castContent .cardContent-button.cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground5.cardContent.cardContent-shadow.itemAction {
+  background-size: cover;
+   !important;
+  border-radius: 50%;
+}
+
+#castContent .cardScalable {
+  width: 100% !important;
+  height: 0 !important;
+  border-radius: 50%;
+  padding-bottom: 100%;
+}
+
+#castContent .cardOverlayContainer.itemAction {
+  border-radius: 50%;
+}
+
+/*Center the mouseover buttons*/
+#castContent .cardOverlayButton-br {
+  bottom: 4%;
+  right: 15%;
+  width: 70%;
+}
+
+#castContent .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light {
+  margin: auto;
+}
+
+/*Center the mouseover buttons*/
+#castContent .cardOverlayButton-br {
+  bottom: 4%;
+  right: 15%;
+  width: 70%;
+}
+
+#castContent .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light {
+  margin: auto;
+}
+
+/* Better detail page */
+.detailImageContainer {
+  width: 17vw;
+}
+
+.layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer, .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
+  padding-left: 32.4vw;
+}
+
+/* Rounded cards */
+.cardContent {
+  border-radius: 10px;
+}
+
+.cardOverlayContainer {
+  border-radius: 10px;
+}
+
+.itemDetailImage {
+  border-radius: 10px;
+}
